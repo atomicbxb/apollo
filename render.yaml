@@ -25,4 +25,3 @@ services:
         value: wzv3
     autoDeploy: true
     region: oregon
-    plan: free
