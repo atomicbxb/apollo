@@ -1,5 +1,5 @@
 services:
-  - type: worker
+  - type: web
     name: wzmlx-telegram-bot
     runtime: docker
     dockerfilePath: ./Dockerfile
@@ -23,5 +23,6 @@ services:
         sync: false
       - key: UPSTREAM_BRANCH
         value: wzv3
-    autoDeploy: false
+    autoDeploy: true
+    region: oregon
     plan: free
